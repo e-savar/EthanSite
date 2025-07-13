@@ -13,6 +13,7 @@ import {
     TooltipContent,
     TooltipTrigger,
 } from "@/components/ui/tooltip"
+import { ExternalLink } from "lucide-react"
 
 function Homepage() {
 
@@ -48,7 +49,7 @@ function Homepage() {
                                 <p>Under Construction</p>
                             </TooltipContent>
                         </Tooltip></a>
-                    <a href="/EthanSavarResume.pdf" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 rounded-md px-8 w-full sm:w-auto min-w-[140px]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-download w-4 h-4 mr-2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg>Download CV</a>
+                    <a href="/EthanSavarResume.pdf" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background dark:bg-sidebar dark:hover:bg-background hover:bg-accent hover:text-accent-foreground h-11 rounded-md px-8 w-full sm:w-auto min-w-[140px]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-download w-4 h-4 mr-2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg>Download CV</a>
                     <a className=" inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-gray-300 text-primary-foreground  h-11 rounded-md px-8 w-full sm:w-auto min-w-[140px] "><Tooltip>
                             <TooltipTrigger>Contact</TooltipTrigger>
                             <TooltipContent>
@@ -62,14 +63,13 @@ function Homepage() {
         <Card id="education" className="py-12 md:py-16 px-4 sm:px-6 bg-white dark:bg-black border-t border-gray-200 dark:border-gray-800 w-full rounded-none">
             <div className="max-w-4xl mx-auto">
                 <div className="flex flex-row items-center justify-center mb-8 md:mb-12 gap-4">
-                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black dark:text-white">
-                        <Tooltip>
-                            <TooltipTrigger><a href="/education" className="hover:text-red-600">Education</a></TooltipTrigger>
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black dark:text-white">Education</h2>
+                    <Tooltip>
+                            <TooltipTrigger><a href="/education" className="hover:text-sidebar"><ExternalLink /></a></TooltipTrigger>
                             <TooltipContent>
                                 <p>View Page</p>
                             </TooltipContent>
                         </Tooltip>
-                    </h2>
                 </div>
                 <div className="rounded-lg border text-card-foreground shadow-sm hover:shadow-lg transition-shadow bg-white dark:bg-black border-gray-200 dark:border-gray-800">
                     <div className="p-4 md:p-6">
@@ -109,14 +109,13 @@ function Homepage() {
         <Card id="experience" className="py-12 md:py-16 px-4 sm:px-6 bg-white dark:bg-black border-t border-gray-200 dark:border-gray-800 w-full rounded-none">
             <div className="max-w-4xl mx-auto">
                 <div className="flex flex-row items-center justify-center mb-8 md:mb-12 gap-4">
-                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black dark:text-white">
-                        <Tooltip>
-                            <TooltipTrigger><a href="/education" className="hover:text-red-600">Experience</a></TooltipTrigger>
+                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black dark:text-white">Experience</h2>
+                    <Tooltip>
+                            <TooltipTrigger><a href="/experience" className="hover:text-sidebar"><ExternalLink /></a></TooltipTrigger>
                             <TooltipContent>
                                 <p>View Page</p>
                             </TooltipContent>
                         </Tooltip>
-                    </h2>
                 </div>
                 <Timeline />
             </div>       
